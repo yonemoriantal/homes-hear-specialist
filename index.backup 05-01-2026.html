@@ -1,0 +1,337 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Homes & HEAR Specialist – JYA LLC</title>
+
+  <meta name="description" content="Rural engineering and technical consulting for Nebraska contractors and small businesses. HOMES & HEAR readiness, energy analysis, drafting, BIM, estimating, and federal contractor support.">
+  <meta name="author" content="JYA LLC">
+
+  <style>
+    /* ===== RESET ===== */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    /* ===== COLORS & FONTS ===== */
+    :root {
+      --navy: #0b1a2e;
+      --slate: #1e2d40;
+      --steel: #3a4f66;
+      --accent: #4a90d9;
+      --divider: #2c3e55;
+      --text-main: #d0d8e2;
+      --text-muted: #8a9bb0;
+      --white: #ffffff;
+      --max-width: 1120px;
+    }
+
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: var(--navy);
+      color: var(--text-main);
+      line-height: 1.7;
+    }
+
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { color: var(--white); }
+
+    .container {
+      width: 90%;
+      max-width: var(--max-width);
+      margin: auto;
+    }
+
+    /* ===== NAVIGATION ===== */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      background: rgba(11,26,46,.95);
+      border-bottom: 1px solid var(--divider);
+      z-index: 100;
+    }
+
+    nav .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.8rem 0;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .brand {
+      font-weight: 700;
+      color: var(--white);
+      white-space: nowrap;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.2rem;
+      flex-wrap: wrap;
+    }
+
+    nav ul a {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--text-muted);
+    }
+
+    nav ul a:hover { color: var(--white); }
+
+    /* ===== TOP‑RIGHT SITE LINKS ===== */
+    .xnav {
+      display: flex;
+      gap: 0.6rem;
+      flex-wrap: wrap;
+    }
+
+    .xnav a {
+      font-size: 0.7rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--steel);
+      padding: 0.25rem 0.45rem;
+      border-radius: 4px;
+    }
+
+    .xnav a:hover {
+      color: var(--white);
+      background: rgba(74,144,217,.08);
+    }
+
+    /* Highlight current site */
+    .xnav a.active {
+      color: var(--white);
+      background: rgba(74,144,217,.18);
+      border: 1px solid rgba(74,144,217,.35);
+    }
+
+    /* ===== HERO ===== */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      padding: 8rem 0 6rem;
+      background:
+        radial-gradient(ellipse at 30% 20%, rgba(74,144,217,.08), transparent 60%),
+        var(--navy);
+    }
+
+    .hero h1 {
+      font-size: clamp(2.4rem, 5vw, 3.4rem);
+      color: var(--white);
+      margin-bottom: 1rem;
+    }
+
+    .hero h1 span { color: var(--accent); }
+
+    .hero p {
+      max-width: 760px;
+      margin: auto;
+      color: var(--text-muted);
+    }
+
+    /* ===== SECTIONS ===== */
+    section {
+      padding: 5rem 0;
+    }
+
+    section:nth-child(even) {
+      background: var(--slate);
+    }
+
+    .section-label {
+      font-size: 0.7rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+
+    .section-title {
+      font-size: clamp(1.5rem, 3vw, 2rem);
+      color: var(--white);
+      margin: 0.6rem 0 1rem;
+    }
+
+    .divider {
+      width: 48px;
+      height: 3px;
+      background: var(--accent);
+      margin-bottom: 2rem;
+    }
+
+    /* ===== SERVICES GRID ===== */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .service-card {
+      background: var(--navy);
+      border: 1px solid var(--divider);
+      border-radius: 6px;
+      padding: 2rem;
+    }
+
+    .service-card h3 {
+      color: var(--white);
+      margin-bottom: 0.6rem;
+    }
+
+    .service-card p {
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+      border-top: 1px solid var(--divider);
+      padding: 2.5rem 0;
+      text-align: center;
+      font-size: 0.75rem;
+      color: var(--text-muted);
+    }
+  </style>
+</head>
+
+<body>
+
+<nav>
+  <div class="container">
+    <div class="brand">Homes &amp; HEAR Specialist</div>
+
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <div class="xnav">
+      <a href="https://jyainc.com" target="_blank">JYA LLC</a>
+      <a href="https://jya-rural-engineering.com" target="_blank">USDA Rural</a>
+      <a href="https://homes-hear-specialist.com" class="active">HOMES / HEAR</a>
+    </div>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="container">
+    <h1>Homes &amp; HEAR<br><span>Specialist – JYA LLC</span></h1>
+    <p>
+      Rural Engineering &amp; Technical Consulting for Nebraska Contractors and Small Businesses.<br>
+      3D Scanning • Drafting • BIM • As‑Built Production • Estimating • Energy Analysis • Federal Contractor Support
+    </p>
+  </div>
+</section>
+
+<section id="about">
+  <div class="container">
+    <p class="section-label">About</p>
+    <h2 class="section-title">Rural Technical Support, Built on Federal Experience</h2>
+    <div class="divider"></div>
+
+    <p>
+      JYA LLC provides practical, field‑tested technical support for rural contractors,
+      property owners, and small businesses — backed by 20+ years of federal experience with
+      DHS, DoD, FBI, NAVFAC, USACE, VA, and AFCEC.
+    </p>
+
+    <p>
+      We deliver accurate, contractor‑ready documentation that keeps projects moving with
+      clarity and confidence.
+    </p>
+  </div>
+</section>
+
+<section id="services">
+  <div class="container">
+    <p class="section-label">Services</p>
+    <h2 class="section-title">HOMES &amp; HEAR Pre‑Launch &amp; Core Technical Services</h2>
+    <div class="divider"></div>
+
+    <div class="services-grid">
+      <div class="service-card">
+        <h3>HOMES &amp; HEAR Pre‑Launch Support</h3>
+        <p>DOE Weatherization Assistant and NEAT workflow setup, auditor readiness, baseline and post‑retrofit modeling.</p>
+      </div>
+
+      <div class="service-card">
+        <h3>3D Scanning &amp; As‑Built Documentation</h3>
+        <p>Field‑verified plans, elevations, mechanical layouts, site packages, and BIM models.</p>
+      </div>
+
+      <div class="service-card">
+        <h3>Drafting &amp; BIM Modeling</h3>
+        <p>Clean CAD and BIM deliverables for renovations, additions, and coordination.</p>
+      </div>
+
+      <div class="service-card">
+        <h3>3rd‑Party Estimating &amp; Proposal Review</h3>
+        <p>Independent cost validation, scope verification, and proposal comparison.</p>
+      </div>
+
+      <div class="service-card">
+        <h3>Property Owner Independent Review</h3>
+        <p>Neutral review of contractor pricing, HVAC, heat pumps, solar, and energy claims.</p>
+      </div>
+
+      <div class="service-card">
+        <h3>Energy Analysis &amp; REAP Documentation</h3>
+        <p>Energy modeling, heat‑pump sizing, utility bill analysis, and USDA‑ready technical narratives.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="container">
+    <p class="section-label">Experience</p>
+    <h2 class="section-title">Federal, Residential &amp; Commercial Past Performance</h2>
+    <div class="divider"></div>
+
+    <p>
+      More than 20 years of experience supporting federal, residential, commercial,
+      aviation, industrial, renewable, and mission‑critical projects nationwide.
+    </p>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container">
+    <p class="section-label">Contact</p>
+    <h2 class="section-title">About JYA LLC</h2>
+    <div class="divider"></div>
+
+    <p>
+      JYA LLC provides rural Nebraska with dependable, professional technical services —
+      backed by decades of drafting, estimating, QA/QC, field verification, and federal
+      project delivery.
+    </p>
+
+    <p>
+      <strong>Licensing Notice:</strong><br>
+      JYA LLC is not a licensed engineering firm. Services are provided as technical consulting
+      and owner’s advisory support. Licensed Professional Engineers are engaged when required.
+    </p>
+
+    <p>
+      Contact: <a href="mailto:john@jyainc.com">john@jyainc.com</a>
+    </p>
+  </div>
+</section>
+
+<footer>
+  © 2026 JYA LLC — Homes &amp; HEAR Specialist
+</footer>
+
+</body>
+</html>
