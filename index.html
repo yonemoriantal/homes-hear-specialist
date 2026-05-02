@@ -11,7 +11,10 @@
 <meta name="author" content="JYA LLC" />
 
 <style>
-/* ===== JYA CANONICAL STYLES (UNCHANGED) ===== */
+/* ===========================
+JYA CANONICAL TEMPLATE — LOCKED
+EDIT TEXT ONLY
+=========================== */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 :root {
 --navy:#0b1a2e; --slate:#1e2d40; --steel:#3a4f66;
@@ -22,53 +25,45 @@
 --font-mono:'Cascadia Code','Consolas',monospace;
 --max-width:1120px; --section-py:5rem;
 }
-html { scroll-behavior:smooth; }
+
+html { scroll-behavior:smooth; font-size:16px; }
 body {
 font-family:var(--font-sans);
 background:var(--navy);
 color:var(--text-main);
 line-height:1.7;
 }
+
 a { color:var(--accent); text-decoration:none; }
 a:hover { color:var(--white); }
+
 .container { width:90%; max-width:var(--max-width); margin:0 auto; }
 
 /* NAV */
 nav {
 position:fixed; top:0; left:0; right:0; z-index:100;
-background:rgba(11,26,46,.92);
+background:rgba(11,26,46,.95);
 border-bottom:1px solid var(--divider);
 }
 nav .container {
 display:flex; align-items:center; justify-content:space-between;
 padding:.85rem 0; gap:1rem; flex-wrap:wrap;
 }
-.brand {
-font-size:1.15rem; font-weight:700; color:#fff;
-letter-spacing:.04em; white-space:nowrap;
-}
+.brand { font-size:1.15rem; font-weight:700; color:#fff; letter-spacing:.04em; }
 .brand span { color:var(--accent); }
-
-nav ul {
-list-style:none; display:flex; gap:1.4rem; flex-wrap:wrap;
-}
+nav ul { list-style:none; display:flex; gap:1.4rem; flex-wrap:wrap; }
 nav ul li a {
-font-size:.82rem; font-weight:500;
-color:var(--text-muted);
+font-size:.82rem; font-weight:500; color:var(--text-muted);
 text-transform:uppercase; letter-spacing:.08em;
 }
 nav ul li a:hover { color:#fff; }
 
-/* CROSS‑SITE NAV */
 .xnav { display:flex; gap:.5rem; flex-wrap:wrap; }
 .xnav a {
-font-size:.72rem; font-weight:600;
-color:var(--steel);
-text-transform:uppercase;
-letter-spacing:.08em;
+font-size:.72rem; font-weight:600; color:var(--steel);
+text-transform:uppercase; letter-spacing:.08em;
 padding:.25rem .45rem;
-border-radius:4px;
-border:1px solid transparent;
+border-radius:4px; border:1px solid transparent;
 }
 .xnav a:hover {
 color:#fff;
@@ -108,7 +103,33 @@ font-size:.8rem; color:var(--steel);
 letter-spacing:.06em;
 text-transform:uppercase;
 font-family:var(--font-mono);
-margin-bottom:2.5rem;
+margin-bottom:1.5rem;
+}
+.cta-row {
+display:flex;
+gap:1rem;
+justify-content:center;
+flex-wrap:wrap;
+margin-top:1.5rem;
+}
+.btn {
+display:inline-block;
+padding:.75rem 2rem;
+font-size:.85rem;
+font-weight:600;
+letter-spacing:.04em;
+text-transform:uppercase;
+border-radius:4px;
+}
+.btn-primary { background:var(--accent); color:#fff; }
+.btn-primary:hover { background:var(--accent-dim); }
+.btn-outline {
+border:1px solid var(--steel);
+color:var(--text-main);
+}
+.btn-outline:hover {
+border-color:var(--accent);
+color:#fff;
 }
 
 /* SECTIONS */
@@ -116,8 +137,7 @@ section { padding:var(--section-py) 0; }
 section:nth-child(even) { background:var(--slate); }
 .section-label {
 font-size:.7rem; text-transform:uppercase;
-letter-spacing:.16em;
-color:var(--accent);
+letter-spacing:.16em; color:var(--accent);
 margin-bottom:.5rem;
 }
 .section-title {
@@ -170,14 +190,12 @@ font-size:.78rem;color:var(--text-muted);
 <nav>
 <div class="container">
 <a href="#home" class="brand">JYA<span>.</span></a>
-
 <ul>
 <li><a href="#about">About</a></li>
 <li><a href="#services">Services</a></li>
 <li><a href="#experience">Experience</a></li>
 <li><a href="#contact">Contact</a></li>
 </ul>
-
 <div class="xnav">
 <a href="https://jyainc.com">JYA Inc.</a>
 <a href="https://homes-hear-specialist.com" class="active">HOMES / HEAR</a>
@@ -193,9 +211,16 @@ font-size:.78rem;color:var(--text-muted);
 <h1>Homes & HEAR<br><span>Specialist</span></h1>
 <p class="subtitle">
 Rural engineering and technical consulting for Nebraska and Iowa contractors
-and small businesses — 3D scanning, drafting, BIM,
-as‑built documentation, estimating, and energy analysis.
+and small businesses — 3D scanning, drafting, BIM, as‑built documentation,
+estimating, and energy analysis.
 </p>
+
+<!-- ✅ CENTER CTA BLOCK (MATCHES JYA) -->
+<div class="cta-row">
+<a href="#services" class="btn btn-primary">Explore Services</a>
+<a href="#contact" class="btn btn-outline">Get in Touch</a>
+</div>
+
 </div>
 </section>
 
@@ -305,3 +330,5 @@ Serving contractors and property owners across Nebraska and Iowa.
 
 </body>
 </html>
+
+	
