@@ -4,12 +4,9 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-<title>Homes & HEAR Specialist – JYA LLC</title>
-
-<meta name="description" content="HOMES and HEAR technical consulting for Nebraska and Iowa contractors and property owners. NEAT modeling, energy analysis, drafting, BIM, estimating, and federal-style documentation." />
-<meta name="author" content="JYA LLC" />
-
+<title>JYA Inc. — Engineering‑Grade Energy & Technical Support for Nebraska and Iowa</title>
+<meta name="description" content="Engineering‑grade energy and technical support for Nebraska and Iowa. HOMES, HEAR, NEAT modeling, energy analysis, drafting, BIM, estimating, and DOE‑aligned documentation." />
+<meta name="author" content="JYA Inc." />
 <style>
 /* ===========================
 JYA CANONICAL TEMPLATE — LOCKED
@@ -17,170 +14,113 @@ EDIT TEXT ONLY
 =========================== */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 :root {
---navy:#0b1a2e; --slate:#1e2d40; --steel:#3a4f66;
---accent:#4a90d9; --accent-dim:#3670b0;
---white:#ffffff; --divider:#2c3e55;
---text-main:#d0d8e2; --text-muted:#8a9bb0;
---font-sans:'Segoe UI',system-ui,-apple-system,Helvetica,Arial,sans-serif;
---font-mono:'Cascadia Code','Consolas',monospace;
---max-width:1120px; --section-py:5rem;
+  --navy:#0b1a2e; --slate:#1e2d40; --steel:#3a4f66;
+  --accent:#4a90d9; --accent-dim:#3670b0;
+  --white:#ffffff; --divider:#2c3e55;
+  --text-main:#d0d8e2; --text-muted:#8a9bb0;
+  --font-sans:'Segoe UI',system-ui,-apple-system,Helvetica,Arial,sans-serif;
+  --font-mono:'Cascadia Code','Consolas',monospace;
+  --max-width:1120px; --section-py:5rem;
 }
-
 html { scroll-behavior:smooth; font-size:16px; }
-body {
-font-family:var(--font-sans);
-background:var(--navy);
-color:var(--text-main);
-line-height:1.7;
-}
-
+body { font-family:var(--font-sans); background:var(--navy); color:var(--text-main); line-height:1.7; }
 a { color:var(--accent); text-decoration:none; }
 a:hover { color:var(--white); }
-
 .container { width:90%; max-width:var(--max-width); margin:0 auto; }
 
 /* NAV */
 nav {
-position:fixed; top:0; left:0; right:0; z-index:100;
-background:rgba(11,26,46,.95);
-border-bottom:1px solid var(--divider);
+  position:fixed; top:0; left:0; right:0; z-index:100;
+  background:rgba(11,26,46,.95);
+  border-bottom:1px solid var(--divider);
 }
 nav .container {
-display:flex; align-items:center; justify-content:space-between;
-padding:.85rem 0; gap:1rem; flex-wrap:wrap;
+  display:flex; align-items:center; justify-content:space-between;
+  padding:.85rem 0; gap:1rem; flex-wrap:wrap;
 }
 .brand { font-size:1.15rem; font-weight:700; color:#fff; letter-spacing:.04em; }
 .brand span { color:var(--accent); }
 nav ul { list-style:none; display:flex; gap:1.4rem; flex-wrap:wrap; }
 nav ul li a {
-font-size:.82rem; font-weight:500; color:var(--text-muted);
-text-transform:uppercase; letter-spacing:.08em;
+  font-size:.82rem; font-weight:500; color:var(--text-muted);
+  text-transform:uppercase; letter-spacing:.08em;
 }
 nav ul li a:hover { color:#fff; }
-
 .xnav { display:flex; gap:.5rem; flex-wrap:wrap; }
 .xnav a {
-font-size:.72rem; font-weight:600; color:var(--steel);
-text-transform:uppercase; letter-spacing:.08em;
-padding:.25rem .45rem;
-border-radius:4px; border:1px solid transparent;
+  font-size:.72rem; font-weight:600; color:var(--steel);
+  text-transform:uppercase; letter-spacing:.08em;
+  padding:.25rem .45rem; border-radius:4px; border:1px solid transparent;
 }
-.xnav a:hover {
-color:#fff;
-border-color:var(--divider);
-background:rgba(74,144,217,.06);
-}
-.xnav a.active {
-color:#fff;
-border-color:var(--accent);
-background:rgba(74,144,217,.10);
-}
+.xnav a:hover { color:#fff; border-color:var(--divider); background:rgba(74,144,217,.06); }
+.xnav a.active { color:#fff; border-color:var(--accent); background:rgba(74,144,217,.10); }
 
 /* HERO */
 .hero {
-min-height:100vh;
-display:flex; align-items:center; justify-content:center;
-text-align:center;
-padding:8rem 0 6rem;
-background:
-radial-gradient(ellipse at 30% 20%, rgba(74,144,217,.08), transparent 60%),
-radial-gradient(ellipse at 70% 80%, rgba(74,144,217,.05), transparent 50%),
-var(--navy);
+  min-height:100vh;
+  display:flex; align-items:center; justify-content:center;
+  text-align:center; padding:8rem 0 6rem;
+  background:
+    radial-gradient(ellipse at 30% 20%, rgba(74,144,217,.08), transparent 60%),
+    radial-gradient(ellipse at 70% 80%, rgba(74,144,217,.05), transparent 50%),
+    var(--navy);
 }
 .hero h1 {
-font-size:clamp(2.2rem,5vw,3.6rem);
-font-weight:700; color:#fff;
-line-height:1.15; margin-bottom:1rem;
+  font-size:clamp(2.2rem,5vw,3.6rem);
+  font-weight:700; color:#fff; line-height:1.15; margin-bottom:1rem;
 }
 .hero h1 span { color:var(--accent); }
 .hero .subtitle {
-font-size:clamp(1rem,2vw,1.25rem);
-color:var(--text-muted);
-max-width:760px; margin:0 auto 1.5rem;
+  font-size:clamp(1rem,2vw,1.25rem);
+  color:var(--text-muted); max-width:760px; margin:0 auto 1.25rem;
 }
 .hero .credentials {
-font-size:.8rem; color:var(--steel);
-letter-spacing:.06em;
-text-transform:uppercase;
-font-family:var(--font-mono);
-margin-bottom:1.5rem;
+  font-size:.8rem; color:var(--steel);
+  letter-spacing:.06em; text-transform:uppercase;
+  font-family:var(--font-mono); margin-bottom:1.5rem;
 }
-.cta-row {
-display:flex;
-gap:1rem;
-justify-content:center;
-flex-wrap:wrap;
-margin-top:1.5rem;
-}
+.cta-row { display:flex; gap:1rem; justify-content:center; flex-wrap:wrap; margin-top:1.5rem; }
 .btn {
-display:inline-block;
-padding:.75rem 2rem;
-font-size:.85rem;
-font-weight:600;
-letter-spacing:.04em;
-text-transform:uppercase;
-border-radius:4px;
+  display:inline-block; padding:.75rem 2rem; border-radius:4px;
+  font-size:.85rem; font-weight:600; letter-spacing:.04em; text-transform:uppercase;
+  transition:all .2s;
 }
 .btn-primary { background:var(--accent); color:#fff; }
 .btn-primary:hover { background:var(--accent-dim); }
-.btn-outline {
-border:1px solid var(--steel);
-color:var(--text-main);
-}
-.btn-outline:hover {
-border-color:var(--accent);
-color:#fff;
-}
+.btn-outline { border:1px solid var(--steel); color:var(--text-main); background:transparent; }
+.btn-outline:hover { border-color:var(--accent); color:#fff; }
 
 /* SECTIONS */
 section { padding:var(--section-py) 0; }
 section:nth-child(even) { background:var(--slate); }
-.section-label {
-font-size:.7rem; text-transform:uppercase;
-letter-spacing:.16em; color:var(--accent);
-margin-bottom:.5rem;
-}
-.section-title {
-font-size:clamp(1.5rem,3vw,2rem);
-font-weight:700; color:#fff;
-margin-bottom:1rem;
-}
-.section-intro {
-max-width:760px;
-color:var(--text-muted);
-margin-bottom:2.5rem;
-}
-.divider {
-width:48px; height:3px;
-background:var(--accent);
-margin-bottom:2rem;
-}
+.section-label { font-size:.7rem; text-transform:uppercase; letter-spacing:.16em; color:var(--accent); margin-bottom:.5rem; }
+.section-title { font-size:clamp(1.5rem,3vw,2rem); font-weight:700; color:#fff; margin-bottom:1rem; }
+.section-intro { max-width:760px; color:var(--text-muted); margin-bottom:2.5rem; }
+.divider { width:48px; height:3px; background:var(--accent); margin-bottom:2rem; }
 
-/* LAYOUTS */
+/* GRIDS */
 .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:3rem;}
 .about-text p{margin-bottom:1rem;}
 .about-highlights{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;}
 .highlight-card{background:var(--navy);border:1px solid var(--divider);border-radius:6px;padding:1.4rem;}
 .highlight-card .number{font-size:1.8rem;font-weight:700;color:var(--accent);}
 .highlight-card .label{font-size:.78rem;color:var(--text-muted);text-transform:uppercase;}
-
+.highlight-card .desc{margin-top:.6rem;font-size:.85rem;color:var(--text-muted);line-height:1.5;}
 .services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1.5rem;}
 .service-card{background:var(--navy);border:1px solid var(--divider);border-radius:6px;padding:2rem;}
 .service-card h3{color:#fff;margin-bottom:.6rem;}
 .service-card p{color:var(--text-muted);font-size:.9rem;}
-
 .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:3rem;}
 .contact-info-item{display:flex;gap:.75rem;margin-bottom:1.3rem;}
 .contact-form input,.contact-form textarea{
-width:100%;padding:.75rem 1rem;margin-bottom:1rem;
-background:var(--navy);border:1px solid var(--divider);
-border-radius:4px;color:var(--text-main);
+  width:100%; padding:.75rem 1rem; margin-bottom:1rem;
+  background:var(--navy); border:1px solid var(--divider);
+  border-radius:4px; color:var(--text-main);
 }
-
 footer{
-border-top:1px solid var(--divider);
-padding:2.5rem 0;text-align:center;
-font-size:.78rem;color:var(--text-muted);
+  border-top:1px solid var(--divider);
+  padding:2.5rem 0; text-align:center;
+  font-size:.78rem; color:var(--text-muted);
 }
 </style>
 </head>
@@ -188,147 +128,271 @@ font-size:.78rem;color:var(--text-muted);
 <body>
 
 <nav>
-<div class="container">
-<a href="#home" class="brand">JYA<span>.</span></a>
-<ul>
-<li><a href="#about">About</a></li>
-<li><a href="#services">Services</a></li>
-<li><a href="#experience">Experience</a></li>
-<li><a href="#contact">Contact</a></li>
-</ul>
-<div class="xnav">
-<a href="https://jyainc.com">JYA Inc.</a>
-<a href="https://homes-hear-specialist.com" class="active">HOMES / HEAR</a>
-<a href="https://jya-rural-engineering.com">Rural Engineering</a>
-</div>
-</div>
+  <div class="container">
+    <a href="#home" class="brand">JYA<span>.</span></a>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="xnav">
+      <a href="https://jyainc.com">JYA Inc.</a>
+      <a href="https://homes-hear-specialist.com" class="active">HOMES / HEAR</a>
+      <a href="https://jya-rural-engineering.com">Rural Engineering</a>
+    </div>
+  </div>
 </nav>
 
-<!-- HERO -->
 <section class="hero" id="home">
-<div class="container">
-<p class="credentials">HOMES · HEAR · NEAT · ENERGY ANALYSIS</p>
-<h1>Homes & HEAR<br><span>Specialist</span></h1>
-<p class="subtitle">
-Rural engineering and technical consulting for Nebraska and Iowa contractors
-and small businesses — 3D scanning, drafting, BIM, as‑built documentation,
-estimating, and energy analysis.
-</p>
+  <div class="container">
+    <p class="credentials">HOMES · HEAR · NEAT · ENERGY ANALYSIS</p>
+    <h1>JYA Inc.<br><span>Engineering‑Grade Energy & Technical Support</span></h1>
+    <p class="subtitle">Engineering Grade Energy & Technical Support for Nebraska and Iowa</p>
+    <p class="subtitle">John Yonemori‑Antal, Principal</p>
 
-<!-- ✅ CENTER CTA BLOCK (MATCHES JYA) -->
-<div class="cta-row">
-<a href="#services" class="btn btn-primary">Explore Services</a>
-<a href="#contact" class="btn btn-outline">Get in Touch</a>
-</div>
-
-</div>
+    <div class="cta-row">
+      <a href="#services" class="btn btn-primary">Explore Services</a>
+      <a href="#contact" class="btn btn-outline">Get in Touch</a>
+    </div>
+  </div>
 </section>
 
-<!-- ABOUT -->
 <section id="about">
-<div class="container">
-<p class="section-label">About</p>
-<h2 class="section-title">Practical Technical Support for Contractors & Owners</h2>
-<div class="divider"></div>
+  <div class="container">
+    <p class="section-label">Program Glossary</p>
+    <h2 class="section-title">Energy Programs & Tools</h2>
+    <div class="divider"></div>
 
-<div class="about-grid">
-<div class="about-text">
-<p>
-JYA LLC provides field‑tested technical support for rural contractors,
-property owners, and small businesses — backed by 20+ years of federal
-experience across DHS, DoD, FBI, NAVFAC, USACE, VA, and AFCEC.
-</p>
-<p>
-We deliver accurate, contractor‑ready documentation that keeps projects
-moving with clarity, confidence, and compliance.
-</p>
-</div>
+    <div class="about-grid">
+      <div class="about-text">
+        <p>
+          Federal programs and tools administered or supported by the U.S. Department of Energy (DOE) and USDA
+          that define incentives, modeling requirements, and documentation standards.
+        </p>
 
-<div class="about-highlights">
-<div class="highlight-card"><div class="number">HOMES</div><div class="label">Rebate Readiness</div></div>
-<div class="highlight-card"><div class="number">HEAR</div><div class="label">Technical Support</div></div>
-<div class="highlight-card"><div class="number">NEAT</div><div class="label">Modeling</div></div>
-<div class="highlight-card"><div class="number">Federal</div><div class="label">Discipline</div></div>
-</div>
-</div>
-</div>
+        <p><strong>🌱 Iowa’s New IRA Energy Rebates (2026)</strong><br>
+          Helping homeowners cut energy costs with performance‑based upgrades and electrification incentives
+        </p>
+
+        <p>
+          Iowa is rolling out two major Inflation Reduction Act (IRA) rebate programs in 2026, administered by the Iowa Economic Development Authority (IEDA).
+          JYA Inc. helps homeowners and agencies navigate these programs from assessment through installation.
+        </p>
+
+        <p><strong>🏠 HOMES Program — Rebates for Measured Energy Savings</strong><br>
+          For all income levels. Rewards whole home efficiency improvements that achieve 20%+ energy savings.
+          Rebates up to $4,000, or up to $8,000 for LMI households.
+          Applies to insulation, air sealing, duct sealing, and high efficiency HVAC upgrades.
+          Requires energy modeling or utility bill based savings verification.
+        </p>
+
+        <p><strong>⚡ HEEHR Program — Instant Rebates for Electrification</strong><br>
+          For Low to Moderate Income (LMI) households. Point of sale discounts for heat pumps, heat pump water heaters,
+          electric stoves, panel upgrades, wiring, and insulation. Up to $14,000 per household.
+          Income based coverage: &lt;80% AMI up to 100% of equipment cost; 80–150% AMI up to 50% of cost.
+        </p>
+
+        <p><strong>Key Rules for 2026</strong><br>
+          No double dipping: HOMES and HEEHR cannot be used on the same measure.
+          State certified contractors required.
+          Can be combined with the 25C Federal Tax Credit (30% up to $2,000 for heat pumps).
+        </p>
+
+        <p>
+          JYA Inc. provides NEAT modeling preparation, contractor coordination, and rebate ready documentation
+          for Iowa homeowners and agencies.
+        </p>
+      </div>
+
+      <div class="about-highlights">
+        <div class="highlight-card">
+          <div class="number">HOMES</div>
+          <div class="label">Whole‑Home Savings</div>
+          <div class="desc">
+            Home Owner Managing Energy Savings (HOMES) — A U.S. DOE rebate program providing incentives for whole home energy upgrades
+            based on measured or modeled energy savings.
+          </div>
+        </div>
+
+        <div class="highlight-card">
+          <div class="number">HEAR</div>
+          <div class="label">Assessment Rebates</div>
+          <div class="desc">
+            Home Energy Assessment Rebate (HEAR) — A DOE program offering rebates for home energy assessments and targeted efficiency improvements,
+            including electrification and weatherization.
+          </div>
+        </div>
+
+        <div class="highlight-card">
+          <div class="number">NEAT</div>
+          <div class="label">DOE Modeling</div>
+          <div class="desc">
+            National Energy Audit Tool (NEAT) — DOE modeling software used to calculate baseline energy use, evaluate retrofit options,
+            and determine cost effective measures. Weatherization Assistant includes NEAT and supports state ready documentation.
+          </div>
+        </div>
+
+        <div class="highlight-card">
+          <div class="number">REAP</div>
+          <div class="label">Rural Funding</div>
+          <div class="desc">
+            USDA Rural Energy for America Program (REAP) — Federal grant and loan program supporting energy efficiency upgrades and renewable energy projects
+            for rural small businesses and agricultural producers.
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
 </section>
 
-<!-- SERVICES -->
 <section id="services">
-<div class="container">
-<p class="section-label">Services</p>
-<h2 class="section-title">HOMES & HEAR Pre‑Launch & Core Technical Services</h2>
-<div class="divider"></div>
+  <div class="container">
+    <p class="section-label">Services</p>
+    <h2 class="section-title">Core Technical Services</h2>
+    <div class="divider"></div>
 
-<p class="section-intro">
-Nebraska and Iowa have not yet released HOMES and HEAR start dates,
-but contractors and owners can prepare now using NEAT and Weatherization Assistant.
-</p>
+    <p class="section-intro">
+      Engineering Grade Energy & Technical Support for Nebraska and Iowa.
+      JYA Inc. provides rural focused technical support for contractors, property owners, and small businesses across Nebraska and Iowa.
+    </p>
 
-<div class="services-grid">
-<div class="service-card"><h3>HOMES & HEAR Readiness</h3><p>NEAT setup, auditor workflows, baseline and post‑retrofit modeling.</p></div>
-<div class="service-card"><h3>3D Scanning & As‑Builts</h3><p>Field‑verified documentation for homes and small buildings.</p></div>
-<div class="service-card"><h3>Drafting & BIM</h3><p>Clean CAD and BIM deliverables for renovations and coordination.</p></div>
-<div class="service-card"><h3>3rd‑Party Estimating</h3><p>Takeoffs, scope checks, proposal and change order review.</p></div>
-<div class="service-card"><h3>Energy Analysis & REAP</h3><p>Heat pump sizing, savings analysis, USDA‑ready documentation.</p></div>
-</div>
-</div>
+    <p class="section-intro">
+      Our work includes: 3D scanning; Drafting & BIM; As built documentation; Estimating; Whole home energy analysis; Electrification readiness;
+      NEAT modeling and DOE aligned documentation.
+    </p>
+
+    <p class="section-intro">
+      We help clients prepare for DOE HOMES and HEAR programs — even before the states officially launch their portals.
+    </p>
+
+    <p class="section-intro">
+      <strong>Why These Programs Matter</strong><br>
+      Long Term Financial Benefits include lower monthly utility costs through high efficiency heat pumps, insulation, and electrification; reduced exposure to propane and fuel price volatility;
+      increased property value through modernized mechanical and electrical systems; lower maintenance costs from right sized, high efficiency equipment; and the ability to combine DOE rebates,
+      USDA REAP grants, and utility incentives to reduce upfront costs by 25–50%.
+    </p>
+
+    <p class="section-intro">
+      Long Term Performance & Resilience includes more stable indoor comfort during extreme heat and cold; improved indoor air quality and reduced carbon footprint;
+      electrical systems ready for EV charging and battery storage; and better alignment with state and federal energy resilience goals.
+    </p>
+
+    <div class="services-grid">
+      <div class="service-card">
+        <h3>HOMES & HEAR Readiness</h3>
+        <p>NEAT setup and modeling; auditor workflows; baseline and post retrofit modeling; documentation packages for state submission.</p>
+      </div>
+
+      <div class="service-card">
+        <h3>3D Scanning & As Built Documentation</h3>
+        <p>Accurate, field verified documentation for homes and small buildings.</p>
+      </div>
+
+      <div class="service-card">
+        <h3>Drafting & BIM</h3>
+        <p>Clean CAD and BIM deliverables for renovations, coordination, and contractor use.</p>
+      </div>
+
+      <div class="service-card">
+        <h3>Third Party Estimating</h3>
+        <p>Takeoffs, scope checks, proposal review, and change order validation.</p>
+      </div>
+
+      <div class="service-card">
+        <h3>Energy Analysis & USDA REAP</h3>
+        <p>Heat pump sizing, energy savings analysis, and USDA ready documentation for rural businesses and agricultural facilities.</p>
+      </div>
+    </div>
+  </div>
 </section>
 
-<!-- EXPERIENCE -->
 <section id="experience">
-<div class="container">
-<p class="section-label">Experience</p>
-<h2 class="section-title">Federal Past Performance Applied Locally</h2>
-<div class="divider"></div>
+  <div class="container">
+    <p class="section-label">Experience</p>
+    <h2 class="section-title">Federal Experience Applied Locally</h2>
+    <div class="divider"></div>
 
-<p class="section-intro">
-20+ years of federal project experience across DHS, DoD, FBI, NAVFAC,
-USACE, VA, AFCEC, aviation, renewables, utilities,
-and mission‑critical infrastructure — applied to residential and small‑business projects.
-</p>
-</div>
+    <p class="section-intro">
+      JYA Inc. brings more than 20 years of federal project experience across DHS, DoD, FBI, NAVFAC, USACE, VA, AFCEC, aviation, renewables, utilities,
+      and mission critical infrastructure — applied directly to residential and small business energy projects in Nebraska and Iowa.
+    </p>
+
+    <p class="section-intro">
+      <strong>Pre Launch Evaluations and Documentation</strong><br>
+      Nebraska and Iowa have not yet released official start dates for HOMES and HEAR.
+      JYA Inc. ensures contractors and property owners are fully prepared on Day One.
+    </p>
+
+    <p class="section-intro">
+      We perform all required evaluations before the programs go live: NEAT modeling for whole home energy savings; baseline and post retrofit modeling;
+      electrification readiness assessments; heat pump sizing and load calculations; contractor ready scopes of work; state ready HOMES and HEAR documentation;
+      federal ready USDA REAP documentation; and pre design mechanical and electrical evaluations for rural facilities, farms, and community buildings.
+    </p>
+
+    <p class="section-intro">
+      This early preparation reduces delays, improves rebate eligibility, and ensures compliance with DOE requirements.
+    </p>
+
+    <p class="section-intro">
+      <strong>Who We Support</strong><br>
+      Property Owners: homeowners; rural properties and farms; small businesses; community facilities (schools, clinics, churches, tribal facilities).<br>
+      Contractors: HVAC contractors needing NEAT modeling and HOMES/HEAR documentation; electricians preparing for panel upgrades and heat pump installations;
+      solar installers requiring integrated energy savings documentation; general contractors needing DOE aligned scopes and estimating support.<br>
+      State and Federal Agencies: Nebraska Department of Environment & Energy; Iowa energy offices; USDA Rural Development; local and tribal governments; community action agencies.
+    </p>
+
+    <p class="section-intro">
+      <strong>About JYA Inc.</strong><br>
+      John Yonemori Antal, Principal.
+      JYA Inc. delivers mechanical and electrical engineering services grounded in professional engineering expertise,
+      with PE stamped deliverables available through licensed teaming partners as project scope requires.
+      We are a rural focused technical consulting and energy engineering firm serving contractors, property owners, small businesses, and agencies across Nebraska and Iowa.
+      With more than 20 years of federal project experience, we bring federal grade precision to residential and small business energy projects.
+      Our work supports DOE HOMES, HEAR, and NEAT programs, helping contractors and property owners prepare before state portals launch through energy modeling,
+      documentation, and technical evaluations that meet federal and state requirements.
+    </p>
+
+  </div>
 </section>
 
-<!-- CONTACT -->
 <section id="contact">
-<div class="container">
-<p class="section-label">Contact</p>
-<h2 class="section-title">Start a Conversation</h2>
-<div class="divider"></div>
+  <div class="container">
+    <p class="section-label">Contact</p>
+    <h2 class="section-title">Start a Conversation</h2>
+    <div class="divider"></div>
 
-<div class="contact-grid">
-<div>
-<p class="section-intro">
-Serving contractors and property owners across Nebraska and Iowa.
-</p>
+    <div class="contact-grid">
+      <div>
+        <p class="section-intro">
+          Serving contractors, property owners, and agencies across Nebraska and Iowa.
+        </p>
 
-<div class="contact-info-item">
-<div>Email</div>
-<div><a href="mailto:john@jyainc.com">john@jyainc.com</a></div>
-</div>
+        <div class="contact-info-item">
+          <div>Email</div>
+          <div><a href="mailto:john@jyainc.com">john@jyainc.com</a></div>
+        </div>
 
-<div class="contact-info-item">
-<div>Phone</div>
-<div><a href="tel:+14024305418">(402) 430‑5418</a></div>
-</div>
-</div>
+        <div class="contact-info-item">
+          <div>Phone</div>
+          <div><a href="tel:+14024305418">(402) 430‑5418</a></div>
+        </div>
+      </div>
 
-<div class="contact-form">
-<input type="text" placeholder="Your Name" />
-<input type="email" placeholder="Your Email" />
-<textarea placeholder="How can we help?"></textarea>
-<button class="btn btn-primary">Send Message</button>
-</div>
-</div>
+      <div class="contact-form">
+        <input type="text" placeholder="Your Name" />
+        <input type="email" placeholder="Your Email" />
+        <textarea placeholder="How can we help?"></textarea>
+        <button class="btn btn-primary">Send Message</button>
+      </div>
+    </div>
+  </div>
 </section>
 
 <footer>
-© 2026 JYA LLC — Homes & HEAR Specialist
+© 2026 JYA Inc. — Engineering‑Grade Energy & Technical Support
 </footer>
 
 </body>
 </html>
-
-	
